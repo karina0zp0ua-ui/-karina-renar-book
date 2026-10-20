@@ -77,10 +77,7 @@ h1 em,h2 em{font-style:italic;font-family:Georgia,'Times New Roman',serif;font-w
 .about-head{display:flex;justify-content:space-between;align-items:flex-start;gap:50px;margin-bottom:clamp(60px,8vw,110px)}
 .about-head .section-no{margin:8px 0;color:var(--blue)}
 .about h2{font-size:clamp(40px,6.3vw,90px);text-align:right;line-height:1.02}
-.about-body{display:grid;grid-template-columns:minmax(240px,.86fr) minmax(0,1.6fr);gap:clamp(45px,8vw,130px);align-items:start}
-.portrait{margin:0;max-width:450px;position:relative}
-.portrait img{display:block;width:100%;height:auto;object-fit:contain;box-shadow:17px 18px 0 rgba(74,110,117,.17);background:#e4d3c3}
-.portrait figcaption{font-size:10px;margin-top:28px;letter-spacing:.17em;text-transform:uppercase;font-weight:600;color:var(--ink-soft)}
+.about-body{display:block;max-width:1100px;margin-left:auto}
 .timeline{min-width:0;border-top:1px solid var(--line)}
 .timeline article{display:grid;grid-template-columns:minmax(120px,.85fr) minmax(0,2.15fr);gap:25px;padding:29px 0;border-bottom:1px solid var(--line)}
 .timeline-label{font:600 11px/1.7 Manrope,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:var(--blue)}
@@ -158,8 +155,7 @@ footer a:hover{color:#eed5a6}
   .about{padding:90px var(--pad) 110px}
   .about-head{display:block;margin-bottom:58px}
   .about h2{text-align:left;font-size:clamp(40px,9vw,63px);margin-top:32px}
-  .about-body{grid-template-columns:1fr;gap:65px}
-  .portrait{max-width:460px}
+  .about-body{max-width:none;margin-left:0}
   .timeline article{grid-template-columns:1fr;gap:10px;padding:24px 0}
   .timeline p{font-size:16px}
   .contact{padding:93px var(--pad) 103px}
