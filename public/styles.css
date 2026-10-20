@@ -173,3 +173,9 @@ footer a:hover{color:#eed5a6}
 }
 @media(max-width:390px){.hero{padding-bottom:290px}.hero h1{font-size:clamp(52px,15.4vw,66px)}.manifesto-text{font-size:clamp(31px,7.8vw,39px)}.button{gap:18px;padding:17px 14px}.about h2{font-size:38px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal,.motion-ready .reveal:not(.visible){opacity:1;transform:none;transition:none}.nav nav,.menu span{transition:none}}
+
+/* Author biography: one hero portrait only. Also hides legacy cached figure markup. */
+.about .portrait{display:none!important}
+.about .about-body{display:block;width:100%;max-width:1100px;margin:0 auto}
+.about .timeline{display:block;width:100%;max-width:none}
+@media(max-width:760px){.about .about-body{max-width:none}}
