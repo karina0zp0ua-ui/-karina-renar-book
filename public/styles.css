@@ -275,7 +275,7 @@ footer a:hover{color:#eed5a6}
 }
 
 /* BlackSea purchase links for the romance novel */
-.romance-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px}
+.romance-actions{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
 .romance-secondary-link,.novel-secondary-link{display:inline-flex;align-items:center;min-height:44px;color:var(--ink);font-size:13px;font-weight:600;text-decoration:underline;text-underline-offset:5px;transition:color .2s}
 .romance-secondary-link:hover,.novel-secondary-link:hover{color:var(--gold)}
 .romance-secondary-link:focus-visible,.novel-secondary-link:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
