@@ -237,3 +237,6 @@ footer a:hover{color:#eed5a6}
  .novel-cover-frame .novel-cover-title{font-size:clamp(39px,11vw,62px)}
 }
 @media(max-width:420px){.books-tile{grid-template-columns:1fr}.books-tile-art{width:min(68%,245px)}.novel-cover-title{font-size:34px}}
+
+/* Approved cover image on the individual novel page */
+.novel-cover-image{display:block;width:100%;height:100%;object-fit:cover}
