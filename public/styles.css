@@ -240,3 +240,36 @@ footer a:hover{color:#eed5a6}
 
 /* Approved cover image on the individual novel page */
 .novel-cover-image{display:block;width:100%;height:100%;object-fit:cover}
+
+/* Book-led home layout: two equal full-width feature sections */
+.book-feature{
+  display:grid;grid-template-columns:minmax(220px,.82fr) minmax(0,1.18fr);
+  gap:clamp(36px,7vw,130px);align-items:center;
+  background:var(--surface);padding:clamp(80px,10vw,150px) var(--pad);
+  border-top:1px solid var(--line)
+}
+.book-feature .feature-cover-link{
+  display:block;min-width:0;width:100%;max-width:430px;justify-self:center;
+  box-shadow:18px 26px 55px rgba(51,46,40,.18);
+  transform:rotate(-1deg);transition:transform .3s ease,box-shadow .3s ease
+}
+.book-feature .feature-cover-link:hover{transform:rotate(0deg);box-shadow:14px 20px 44px rgba(51,46,40,.22)}
+.book-feature .feature-cover-link img{width:100%;height:auto;display:block}
+.book-feature .feature-copy{max-width:800px;min-width:0}
+.book-feature .feature-copy .section-no{color:var(--gold);margin:0 0 27px}
+.book-feature .feature-copy h2{font-size:clamp(36px,5.3vw,77px);line-height:1.08;margin:0 0 24px;overflow-wrap:break-word}
+.book-feature .feature-copy h2 em{color:var(--blue)}
+.book-feature .feature-status{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.book-feature .feature-copy h3{font:600 12px/1.4 Manrope,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;margin:35px 0 20px}
+.book-feature .feature-copy p:not(.section-no):not(.feature-status){font-size:clamp(15px,1.45vw,18px);line-height:1.85;color:var(--ink-soft);margin:0 0 19px}
+.book-feature .feature-copy .button{margin-top:22px;max-width:100%;line-height:1.55;gap:20px;text-align:left}
+.book-feature.romance-feature{background:var(--sage);grid-template-columns:minmax(0,1.18fr) minmax(220px,.82fr)}
+.book-feature.romance-feature .feature-cover-link{grid-column:2;grid-row:1}
+.book-feature.romance-feature .feature-copy{grid-column:1;grid-row:1}
+@media(max-width:760px){
+  .book-feature,.book-feature.romance-feature{grid-template-columns:1fr;gap:55px;padding:80px var(--pad) 95px}
+  .book-feature .feature-cover-link,.book-feature.romance-feature .feature-cover-link{grid-column:1;grid-row:1;width:min(80%,365px)}
+  .book-feature .feature-copy,.book-feature.romance-feature .feature-copy{grid-column:1;grid-row:2}
+  .book-feature .feature-copy h2{font-size:clamp(34px,8.8vw,59px)}
+  .book-feature .feature-copy .button{width:100%}
+}
