@@ -280,3 +280,24 @@ footer a:hover{color:#eed5a6}
 .romance-secondary-link:hover,.novel-secondary-link:hover{color:var(--gold)}
 .romance-secondary-link:focus-visible,.novel-secondary-link:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
 @media(max-width:760px){.romance-actions{flex-direction:column;align-items:stretch;gap:8px}.romance-secondary-link{align-self:flex-start}}
+
+/* Book excerpt on the romance novel page */
+.novel-excerpt{
+  max-width:1000px;
+  margin:clamp(65px,9vw,120px) auto 0;
+  padding:clamp(30px,5.5vw,72px);
+  background:var(--surface);
+  border-top:3px solid var(--gold);
+  box-shadow:0 18px 55px rgba(44,49,41,.065);
+}
+.novel-excerpt-head{margin-bottom:clamp(25px,4vw,44px)}
+.novel-excerpt-eyebrow{font:600 11px/1.5 Manrope,Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin:0 0 18px}
+.novel-excerpt h2{font:500 clamp(27px,3.5vw,48px)/1.15 Unbounded,Arial,sans-serif;letter-spacing:-.05em;margin:0 0 16px}
+.novel-excerpt-chapter{font-size:13px;line-height:1.6;color:var(--ink-soft);margin:0}
+.novel-excerpt-body{max-width:760px}
+.novel-excerpt-body p{font:400 clamp(16px,1.6vw,19px)/1.85 Georgia,"Times New Roman",serif;color:var(--ink);margin:0 0 18px}
+.novel-excerpt-body p:last-child{margin-bottom:0}
+@media(max-width:760px){
+  .novel-excerpt{margin-top:72px;padding:28px 23px 34px}
+  .novel-excerpt-body p{font-size:17px;line-height:1.75}
+}
