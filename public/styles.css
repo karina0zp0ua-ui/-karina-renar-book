@@ -301,3 +301,56 @@ footer a:hover{color:#eed5a6}
   .novel-excerpt{margin-top:72px;padding:28px 23px 34px}
   .novel-excerpt-body p{font-size:17px;line-height:1.75}
 }
+
+
+/* Third published novel: typographic cover preview until original art is supplied */
+.third-book-cover{
+  position:relative;
+  overflow:hidden;
+  width:100%;
+  height:100%;
+  min-height:0;
+  padding:clamp(25px,5vw,52px) clamp(17px,3.2vw,42px);
+  background:
+    radial-gradient(ellipse at 18% 22%,rgba(230,192,160,.25),transparent 50%),
+    radial-gradient(ellipse at 80% 78%,rgba(183,65,70,.47),transparent 55%),
+    linear-gradient(148deg,#2c4147,#323947 48%,#793f49);
+  color:#fff9f2;
+  text-align:center;
+}
+.third-book-cover::before{inset:19px;border-color:rgba(250,235,215,.36)}
+.third-book-cover::after{
+  content:"";position:absolute;z-index:-1;left:18%;right:18%;top:20%;bottom:18%;
+  border-left:1px solid rgba(255,242,225,.19);border-right:1px solid rgba(255,242,225,.19);
+  transform:skewX(-12deg)
+}
+.third-cover-author{
+  display:block;font:600 clamp(11px,1.3vw,16px)/1.4 Manrope,Arial,sans-serif;
+  letter-spacing:.2em;text-transform:uppercase
+}
+.third-cover-title{
+  display:block;font:400 clamp(34px,3.75vw,64px)/1.08 Georgia,"Times New Roman",serif;
+  letter-spacing:-.045em;text-wrap:balance;text-shadow:0 3px 16px rgba(15,26,30,.24)
+}
+.third-cover-title em{font-weight:400;font-style:italic;color:#eecdb6}
+.third-cover-caption{
+  display:block;font:600 clamp(9px,1.15vw,12px)/1.6 Manrope,Arial,sans-serif;
+  text-transform:uppercase;letter-spacing:.18em
+}
+.book-feature.third-feature{background:#ede6dd}
+.book-feature.third-feature .feature-cover-link{aspect-ratio:2/3}
+.third-actions{display:flex;flex-direction:column;align-items:flex-start;gap:14px}
+.third-actions .button{max-width:100%}
+.third-novel-page .novel-cover-frame .third-cover-title{font-size:clamp(42px,4.4vw,73px)}
+@media(max-width:760px){
+ .third-actions{align-items:stretch;gap:9px}
+ .third-novel-page .novel-cover-frame .third-cover-title{font-size:clamp(39px,10vw,58px)}
+ .third-book-cover{padding:clamp(24px,5vw,45px) clamp(20px,5vw,35px)}
+ .book-feature.third-feature .third-cover-title{font-size:clamp(32px,7vw,51px)}
+}
+@media(max-width:420px){
+ .third-novel-page .novel-cover-frame .third-cover-title{font-size:clamp(35px,9vw,45px)}
+ .book-feature.third-feature .third-cover-title{font-size:clamp(30px,9vw,40px)}
+ .third-cover-author{font-size:11px}
+ .third-cover-caption{font-size:9px}
+}
